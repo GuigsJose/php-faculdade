@@ -94,12 +94,17 @@
 
 
 
+//9. Faça um script que peça a temperatura em graus Celsius, transforme e
+//mostre em graus Fahrenheit
 
+    echo "<h2>Informe temperatura em Celcius: </h2>";
+    $celciusGrau = 30;
 
+    echo "<h3>{$celciusGrau}</h3>";
 
+    $fahrenheitGrau = $celciusGrau * 1.8 + 32;
 
-
-
+    echo "<h2>Temperatura em Fahrenheit: {$fahrenheitGrau}</h2>";
 
 
 
