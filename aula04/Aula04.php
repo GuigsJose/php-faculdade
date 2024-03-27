@@ -13,6 +13,18 @@
             }
     }
 
-    
+
+    echo "<h1>Arrays</h1>";
+
+    $lista = [""];
+    $comidas = array("batata", "miojo","polenta");
+    $comidas[20] = "feijao";
+    echo $comidas[0];
+
+
+    // para cada $comida dentro do array $comida faça 
+    foreach($comidas as $comida){
+        echo "<li>Item - ".$comida;
+    }
 
 ?>
