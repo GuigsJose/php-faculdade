@@ -1,4 +1,5 @@
 <?php 
+    declare (strict_types=1);
     echo "<h1>Funções</h1>";
 
     function nome(){
@@ -37,6 +38,15 @@
     }
 
     echo subtrair(30,20);
+
+    function divisao(float $num1, float $num2){
+        $resp = $num1 / $num2;
+        echo "resposta {$num1} / {$num2} = {$resp}";
+    }
+
+
+    //divisao("10",2); nao funciona
+    divisao(10,2);
 
 ?>
 
