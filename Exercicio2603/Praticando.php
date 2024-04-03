@@ -93,32 +93,65 @@
 
     <p>versão array</p>
 <?php 
-   $atletas = [];   //Armazenar os dados dos atletas-->
+//    $atletas = [];   //Armazenar os dados dos atletas-->
 
-    //loop para coletar os dados-->
-    for($i=1;$i<=5;$i++)
-    {
-        $nome = $_GET['nome_$i'];
-        $saltos =[];
-        for($j=1;$j<=5;$j++)
-        {
-            $saltos['$j'."_salto"];
-        }
-        $atletas[] = ['nome'=>$nome,'saltos'=> $saltos];
-    }
-    echo "<h3>Resultado Final</h3>";
-    foreach ($atletas as $atleta) {
-    $nome = $atleta['nome'];
-    $saltos = $atleta['saltos'];
-    $media = array_sum($saltos) / count($saltos);
-    echo "Atleta: $nome<br>";
-    echo "Saltos: " . implode(" - ", $saltos) . "<br>";
-    echo "Média dos saltos: $media m<br><br>";
-}
-
-
-?>
+//     //loop para coletar os dados-->
+//     for($i=1;$i<=5;$i++)
+//     {
+//         $nome = $_GET['nome_$i'];
+//         $saltos =[];
+//         for($j=1;$j<=5;$j++)
+//         {
+//             $saltos['$j'."_salto"];
+//         }
+//         $atletas[] = ['nome'=>$nome,'saltos'=> $saltos];
+//     }
+//     echo "<h3>Resultado Final</h3>";
+//     foreach ($atletas as $atleta) {
+//     $nome = $atleta['nome'];
+//     $saltos = $atleta['saltos'];
+//     $media = array_sum($saltos) / count($saltos);
+//     echo "Atleta: $nome<br>";
+//     echo "Saltos: " . implode(" - ", $saltos) . "<br>";
+//     echo "Média dos saltos: $media m<br><br>";
+//}
+?> 
  
+ <hr>
+
+ <p>Exercicio 03</p>
+
+ <?php 
+    function desenharRetangulo($linhas = 1, $colunas = 1) {
+        $linhas = max($linhas, 1);
+        $colunas = max($colunas, 1);
+        
+        echo "+";
+        for ($i = 0; $i < $colunas; $i++) {
+            echo "-";
+        }
+        echo "+<br>";
+        
+        for ($i = 0; $i < $linhas; $i++) {
+            echo "|";
+            for ($j = 0; $j < $colunas; $j++) {
+                echo "&nbsp;&nbsp;";
+            }
+            echo "|<br>";
+        }
+        
+        echo "+";
+        for ($i = 0; $i < $colunas; $i++) {
+            echo "-";
+        }
+        echo "+<br>";
+    }
+
+    desenharRetangulo(1, 3);
+    
+    
+    
+ ?>
     
 </body>
 </html>
