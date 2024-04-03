@@ -89,7 +89,8 @@
         echo "Saltos: {$primeiro_s} - {$segundo_s} - {$terceiro_s} - {$quarto_s} - {$quinto_s}<br>";
         echo "Média dos saltos: {$media} m";
     ?>
-
+    <hr>
+    
 </body>
 </html>
 
