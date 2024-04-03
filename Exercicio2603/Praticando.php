@@ -90,6 +90,35 @@
         echo "Média dos saltos: {$media} m";
     ?>
     <hr>
+
+    <p>versão array</p>
+<?php 
+   $atletas = [];   //Armazenar os dados dos atletas-->
+
+    //loop para coletar os dados-->
+    for($i=1;$i<=5;$i++)
+    {
+        $nome = $_GET['nome_$i'];
+        $saltos =[];
+        for($j=1;$j<=5;$j++)
+        {
+            $saltos['$j'."_salto"];
+        }
+        $atletas[] = ['nome'=>$nome,'saltos'=> $saltos];
+    }
+    echo "<h3>Resultado Final</h3>";
+    foreach ($atletas as $atleta) {
+    $nome = $atleta['nome'];
+    $saltos = $atleta['saltos'];
+    $media = array_sum($saltos) / count($saltos);
+    echo "Atleta: $nome<br>";
+    echo "Saltos: " . implode(" - ", $saltos) . "<br>";
+    echo "Média dos saltos: $media m<br><br>";
+}
+
+
+?>
+ 
     
 </body>
 </html>
