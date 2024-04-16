@@ -12,6 +12,7 @@
 
         echo print_r($_GET);
         echo "<br>Nome: ".$_GET['nomePessoa'];
+        echo "<br>Sobrenome:".$_GET['sobrenome'];
 
     ?>
 </body>

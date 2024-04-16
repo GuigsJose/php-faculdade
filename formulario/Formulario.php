@@ -20,9 +20,19 @@
 
     </form>
 
-    <form action="" method="get"></form>
+    <hr>
+    <br>
 
-    <form action="" method="post"></form>
+    <form action="novo.php" method="get">
+
+        <label for="">Seu animal favorito: </label>
+        <input type="text" name="animalLegal" id=""><br>
+
+        <label for="">Seu animal menos favorito:</label>
+        <input type="text" name="animalPaia" id="">
+        
+        <input type="submit" value="mandar">
+    </form>
 
 </body>
 </html>
