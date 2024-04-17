@@ -15,6 +15,9 @@
 
         echo "<h2>PAIA:</h2>";
         echo "<h3>".$_GET['animalPaia']."</h3>";
+
+        
+
     ?>
 
 
