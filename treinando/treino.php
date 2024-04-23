@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Document</title>
 </head>
+
 <body>
 
-   
-    <div class="titulo-um">
-   <center> <h2>Formulario</h2></center>
-   </div>
-    <div class="formulario-um">
-    <center><form method="get">
-        <label for="nome">Nome:</label><br>
-        <input type="text" name="nome" id="nome"><br>
 
-        <label for="nome">Email:</label><br>
-        <input type="email" name="email" id="email"><br>
+  <?php
+  if (isset($_GET['selec-color'])) {
+    $cor = $_GET['selec-color'];
+  }
 
-        <label for="cpf">CPF:</label><br>
-        <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00"><br>
+  echo "<body class={$cor}>";
+  echo '  <form class="container p-3">';
+  echo '    <div class="mb-3">';
+  echo '      <select class="form-select" aria-label="Default select example" name="selec-color">';
+  echo '        <option selected>Selecione uma classe de cor</option>';
+  echo '        <option value="bg-primary">primary</option>';
+  echo '        <option value="bg-secondary">secondary</option>';
+  echo '        <option value="bg-success">success</option>';
+  echo '        <option value="bg-info">info</option>';
+  echo '        <option value="bg-warning">warning</option>';
+  echo '        <option value="bg-danger">danger</option>';
+  echo '        <option value="bg-light">light</option>';
+  echo '        <option value="bg-dark">dark</option>';
+  echo '      </select>';
+  echo '    </div>';
+  echo '    <div class="col-auto">';
+  echo '      <button type="submit" class="btn bg-black text-white mb-3">Confirmar</button>';
+  echo '    </div>';
+  echo '  </form>';
+  echo '</body>';
 
-        <label for="data">Data de Nascimento</label><br>
-        <input type="date" name="data" id="data"><br>
 
-        <label for="cor_fundo">Escolha uma Cor</label>
-        <input type="color" name="cor_fundo" id="cor_fundo"><br>
-        <input type="submit" value="Enviar">
-    </form>
-    </center>
-    </div>
-    
 
-    <?php 
-        if(isset($_GET['cor_fundo']))
-        {
-            $cor = $_GET['cor_fundo'];
-            echo "<style> .formulario-um{ background-color: $cor}</style>"; 
-        }
-    ?>
+  ?>
 </body>
-</html>
+
+</html>s
