@@ -23,7 +23,6 @@
 
     <label for="cor_fundo">Escolha uma Cor:</label>
     <input type="color" name="cor_fundo" id="cor_fundo" ><br>
-
     <input type="submit" value="Enviar">
 </form>
 </center>
