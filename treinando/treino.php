@@ -34,7 +34,7 @@
   echo '    <div class="col-auto">';
   echo '      <button type="submit" class="btn bg-black text-white mb-3">Confirmar</button>';
   echo '    </div>';
-  echo '  </form>';
+  echo '   </form>';
   echo '</body>';
 
 

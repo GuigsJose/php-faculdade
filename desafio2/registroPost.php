@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: desafio2/sucesso.php");
             exit();
         } else {
-            header("Location: desafio2/erro.php?campo=nome");
+            header("Location: desafio2/erro.php ?campo=nome");
             exit();
         }
     }

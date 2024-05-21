@@ -8,10 +8,10 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         $senha = $_GET['senha'];
 
         if (validar_nome_usuario($nome) && validar_email($email) && validar_senha($senha)) {
-            header("Location: sucesso.php");
+            header("Location: desafio2/sucesso.php");
             exit();
         } else {
-            header("Location: desafio2/erro.php?campo=nome");
+            header("Location: desafio2/erro.php ?campo=nome");
             exit();
         }
     }
