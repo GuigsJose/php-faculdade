@@ -1,0 +1,16 @@
+/* Estilos básicos para a aplicação */
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input, button {
+    margin: 5px;
+}
+
+ul {
+    list-style-type: none;
+}

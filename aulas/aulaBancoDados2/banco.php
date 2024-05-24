@@ -85,6 +85,7 @@
 
         $q = "DELETE FROM usuarios WHERE usuario='$usuario'";
         $resp = $banco->query($q);
+        
 
         if($debug){
             echo "<br> Query: $q";
